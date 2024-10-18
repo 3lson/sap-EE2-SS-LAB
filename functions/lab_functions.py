@@ -24,6 +24,8 @@ def plot_signal(*args, title='', xlabel='', ylabel='', func='plot', **kwargs):
     eval('ax.'+func+'(*args, **kwargs)')
 
     ax.set(xlabel=xlabel, ylabel=ylabel, title=title)
+
+
     ax.grid()
 
     plt.tight_layout()
